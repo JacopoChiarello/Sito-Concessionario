@@ -1,0 +1,20 @@
+.table-listino p {
+  color: #127FC3;
+}
+
+.table-listino p.prezzo {
+  color: white
+}
+
+.banda-auto {
+  background-color: #14141f;
+}
+
+
+.table-listino img {
+  border: 2px solid #14141f;
+}
+
+.banda-titolo {
+  background-color: #14141f;
+}

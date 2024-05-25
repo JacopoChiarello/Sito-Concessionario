@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 1vw;
+  color: white;
+}
+
+body {
+  background-color: #141526;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 2vmin;
+  color: white;
+
+}
+
+
+.banda-header {
+  background-color: #0b0c1b;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 3px solid #127FC3;
+  height: 15vh;
+  /* Utilizzo dell'unità vh per l'altezza */
+  align-items: center;
+}
+
+.tendina {
+  display: inline-block;
+}
+
+/*MENU TENDINA*/
+.contenuto-tendina {
+  display: none;
+  /*se non passi sopra non viene mostrato*/
+  position: absolute;
+  background-color: #12142d;
+  min-width: 5vw;
+  z-index: 1;
+  /*---------*/
+}
+
+.tendina:hover .contenuto-tendina {
+  display: block;
+  /*permette il blocco quando passi sopra e la visualizzazione*/
+}
+
+.contenuto-tendina a {
+  display: block;
+  padding: 10px;
+  font-size: 1vw;
+  text-align: left;
+  text-decoration: none;
+  color: #d1d1d1;
+  border: 1px solid #399cbd;
+}
+
+
+a {
+  text-decoration: none;
+  /* Rimuove la sottolineatura dei link */
+  color: inherit;
+  cursor: pointer;
+  /* Eredità il colore dal genitore (il colore del testo del corpo) */
+}
+
+.container-social {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  padding: 2vw 0;
+}
+
+
+/*CONTAINER IMMAGINE*/
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  border-bottom: 3px solid #127FC3;
+  border-top: 3px solid #127FC3;
+}
+
+/*CONTAINER DEL TESTO OVERLAPPED*/
+.container-testo {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+}
+
+/*-------UTILIZZO DELLA GRANDEZZA VW PER L'AUTO-RESIZING AL MODIFICARE DELLA PORTVIEW-------------------*/
+
+/*TESTO*/
+.testo-centrato {
+  font-size: 1vw;
+  font-weight: 650;
+  color: #d1d1d1;
+}
+
+/*TESTO TITOLO*/
+.testo-titolo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vw;
+  color: white;
+  margin-bottom: 1vw;
+}
+
+
+.button-stile1 {
+  background-color: #0060fe;
+  padding: 0.5vw 1vw;
+  border: none;
+  cursor: pointer;
+  font-weight: 650;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-top: 1vw;
+}
+
+
+.button-stile1:hover {
+  background-color: #004cfe;
+  /* Colore di sfondo al passaggio del mouse */
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+.banda {
+  background-color: #191929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 2vw;
+}
+
+.banda img {
+  height: 10vw;
+  width: 10vw;
+}
+
+.banda img:hover {
+  filter: brightness(1.2);
+  /* Aumenta la luminosità quando il mouse è sopra */
+}
+
+/*------CONTAINER SPLITTATO--------*/
+.container-split {
+  background-color: #000000ff;
+  display: flex;
+  flex-direction: row;
+}
+
+/*---------------------------------*/
+
+.container-split p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vw;
+}
+
+
+/*------STILI PER IL TESTO DEL CONTAINER SPLITTATO--------*/
+.parte1 {
+  flex: 1;
+  /* Fai espandere le parti in modo uniforme */
+  padding: 3vw 2vw;
+  /* Aggiungi spazio interno per una migliore leggibilità */
+  text-align: right;
+  background-color: #127FC3;
+}
+
+.parte1:hover {
+  color: #d9d9d9;
+}
+
+
+.parte2 {
+  flex: 1;
+  background-color: #14141f;
+  color: #127FC3;
+  padding: 3vw 2vw;
+}
+
+.parte2 p {
+  color: #127FC3;
+}
+
+.parte2:hover,
+.parte2:hover p {
+  color: #009dff;
+}
+
+/*------------------------------------*/
+
+
+/*-----ANIMAZIONE DI FADE IN--------*/
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.testo-titolo,
+.testo-centrato,
+.button-stile1 {
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 0.5s;
+  /* Ritardo di mezzo secondo rispetto all'inizio dell'animazione principale */
+}
+
+/*--------------------------*/
+
+
+
+.banda-footer {
+  background-color: #0b0c1b;
+  padding: 1vw;
+  font-size: 0.7vw;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 3px solid #127FC3;
+}

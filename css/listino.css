@@ -1,0 +1,81 @@
+p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 1vw;
+  color: white;
+}
+
+
+.banda-titolo {
+  background-color: #127FC3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 2vw;
+
+}
+
+/*-------------TABELLA CUSTOM----------------*/
+.table-listino {
+  width: 80%;
+  background-color: #212235;
+  border-radius: 20px;
+  margin: auto;
+
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.table-listino img {
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #127FC3;
+}
+
+.table-listino td, 
+.table-listino th {
+  padding: 8px;
+  text-align: center;
+
+}
+
+.table-listino th {
+  background-color: #0b0c1b;
+  transition: filter 0.5s ease;
+}
+
+.table-listino td:hover {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+/*-------------------------------------------*/
+
+.banda-auto {
+  background-color: #127FC3;
+  padding: 1vw 2vw;
+  border-radius: 0 0 10px 10px;
+}
+
+.split {
+  display: flex;
+
+}
+
+.sin-split {
+  flex: 1;
+  /* Condivide in modo uniforme lo spazio disponibile tra le due parti */
+
+  text-align: left;
+}
+
+.rig-split {
+  flex: 1;
+  /* Condivide in modo uniforme lo spazio disponibile tra le due parti */
+
+  text-align: right;
+}
+
+.prezzo {
+  color: #14141f;
+}

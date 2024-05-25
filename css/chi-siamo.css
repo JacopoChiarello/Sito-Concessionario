@@ -1,0 +1,43 @@
+.storia-container {
+  display: flex;
+  align-items: center;
+  margin: 5vw;
+  /*si puo usare anche il padding*/
+
+}
+
+.testo-fixed {
+  max-width: 800px;
+  /* Imposta la larghezza massima del td */
+  overflow: hidden;
+  /* Nasconde il testo oltre la larghezza massima */
+  font-size: 1vw;
+  color: #d1d1d1;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 650;
+}
+
+
+
+
+.face-container {
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  display: flex;
+  width: 100%;
+  height: 10vw;
+  text-align: center;
+  justify-content: center;
+  /* Imposta l'altezza del container */
+}
+
+.face-container img{
+  border-radius: 50%;
+}
+
+.obj1 {
+  flex: 1;
+  /* Ogni parte occupa la stessa quantità di spazio disponibile */
+}
+

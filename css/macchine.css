@@ -1,0 +1,181 @@
+/*-------------TABELLA CUSTOM----------------*/
+.table-showcar {
+  width: 60%;
+  background-color: #212235;
+  border-radius: 20px;
+  margin: auto;
+  border-spacing: 0;
+
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+
+.table-showcar td,
+.table-showcar th {
+  padding: 8px;
+  align-items: center;
+}
+
+.table-showcar td {
+  max-width: 150px;
+  /* Imposta la larghezza massima del td */
+  overflow: hidden;
+  /* Nasconde il testo oltre la larghezza massima */
+}
+
+.table-showcar img {
+  border: 2px solid #127FC3
+}
+
+
+.table-showcar th {
+  background-color: #127FC3;
+}
+
+/*-------------------------------------------*/
+
+
+/*-------------TABELLA CUSTOM + BOTTONI----------------*/
+.table-bottoni {
+  width: 60%;
+  background-color: #212235;
+  border-radius: 20px;
+  margin: auto;
+  border-spacing: 0;
+
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+
+.table-showcar td,
+.table-showcar th {
+  padding: 8px;
+  align-items: center;
+}
+
+.button-avanti {
+  background-color: #127FC3;
+  padding: 0.5vw 1vw;
+  width: 70%;
+  border: none;
+  cursor: pointer;
+  font-weight: 650;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button-avanti:hover {
+  background-color: #016bad
+}
+
+.button-indietro {
+  background-color: #da2525;
+  padding: 0.5vw 1vw;
+  width: 70%;
+  border: none;
+  cursor: pointer;
+  font-weight: 650;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.button-indietro:hover {
+  background-color: #af0e0e
+}
+
+/*-------------------------------------------*/
+
+
+.container-idcar {
+  display: flex;
+  align-items: center;
+}
+
+
+/*--------------------COLOR PICKER CUSTOM--------------------------*/
+
+input[type=radio] {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  
+  appearance: none;
+  /* Impostazioni per la compatibilità del browser */
+  -webkit-appearance: none;
+  /* Impostazioni per la compatibilità del browser */
+  -moz-appearance: none;
+  /* Impostazioni per la compatibilità del browser */
+  
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type=radio]:checked::after {
+  content: '\2713';
+  /* Carattere Unicode per la spunta */
+  line-height: 3vw;
+  color: white;
+  transition: filter 0.5s ease;
+}
+
+input[type=radio]:hover {
+  filter: brightness(0.7);
+}
+
+/*----------------------------------------------*/
+
+
+
+
+/*-----------BARRA PRESTAZIONI CUSTOM-----------*/
+
+.parametro-barra {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Aggiungi spazio tra i blocchi se desideri */
+}
+
+.sfondo-barra{
+  margin-left: 30px;
+  width: 80%;
+  height: 1vw;
+  background-color: #14141f;
+  /* Colore dello sfondo della barra */
+  border: 1px solid #bdc3c7;
+  /* Bordo della barra */
+}
+
+.barra {
+  height: 100%;
+  background-color: #3498db;
+  /* Colore della barra */
+}
+
+.parametro-barra p {
+  font-size: 1vw;
+  color: #d1d1d1;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 650;
+}
+
+
+
+/*----------------------------------------------*/
